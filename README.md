@@ -8,7 +8,7 @@ customizable multi-action-button component for react-native
 
 ### Installation
 ```bash
-npm i https://github.com/ajaxangular/react-native-md-textinput --save
+npm i https://github.com/ajaxangular/react-native-action-button --save
 ```
 
 ### Usage
