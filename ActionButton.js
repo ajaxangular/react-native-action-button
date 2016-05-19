@@ -1,5 +1,4 @@
-import React, { Component, PropTypes } from 'react';
-import { StyleSheet, Text, View, Animated, Easing, TouchableOpacity, PixelRatio } from 'react-native';
+import React, { PropTypes, Component, StyleSheet, Text, View, Animated, Easing, TouchableOpacity, PixelRatio } from 'react-native';
 import ActionButtonItem from './ActionButtonItem';
 
 const alignItemsMap = {
@@ -42,12 +41,12 @@ export default class ActionButton extends Component {
       position = 'center',
       offsetX  = 10,
       offsetY  = 4,
-      size     = 42;
+      size     = 45;
     } else {
       position = 'right',
       offsetX  = 30,
       offsetY  = 30,
-      size     = 56;
+      size     = 45;
     }
 
     this.state.position = this.props.position || position;
@@ -118,7 +117,6 @@ export default class ActionButton extends Component {
       <View style={this.getActionButtonStyles()}>
         <TouchableOpacity
           activeOpacity={0.85}
-          onLongPress={this.props.onLongPress}
           onPress={() => {
             this.props.onPress()
             if (this.props.children) this.animateButton()
