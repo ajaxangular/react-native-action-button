@@ -8,7 +8,7 @@ customizable multi-action-button component for react-native
 
 ### Installation
 ```bash
-npm i react-native-action-button --save
+npm i https://github.com/ajaxangular/react-native-action-button --save
 ```
 
 ### Usage
